@@ -8,7 +8,7 @@ public class A_IfStatements {
 
         int number = 2;
         // implementeer de conditie van het if statement.
-        if (true) {
+        if (number % 2 != 0) {
             System.out.println("Odd");
         } else {
             System.out.println("Even");
@@ -27,6 +27,14 @@ public class A_IfStatements {
         // anders krijgt de klant 1% korting
         // maak je geen zorgen over afronding.
 
+        if(totalAmount > 50 && totalAmount <= 100){
+            discount = 5f;
+        } else if(totalAmount > 100){
+            discount = 10f;
+        } else {
+            discount = 1f;
+        }
+
         float totalAmountIncludingVAT = (totalAmount - (totalAmount * discount)) * 1.22f;
         System.out.println("Te betalen: " + totalAmountIncludingVAT);
 
@@ -37,8 +45,10 @@ public class A_IfStatements {
         int x = 8;
         int y = 10;
         // Voeg een if statement toe zodat alleen het juiste statement hieronder wordt uitgevoerd. Het if statement moet controleren of x groter is dan y, of y groter is dan x.
+        if(x > y){
 
             System.out.println(x + " > " + y);
+        }
             System.out.println(y + " > " + x);
             System.out.println("I can't choose... I think they are equal...");
 
