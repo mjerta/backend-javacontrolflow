@@ -27,12 +27,12 @@ public class A_IfStatements {
         // anders krijgt de klant 1% korting
         // maak je geen zorgen over afronding.
 
-        if(totalAmount > 50 && totalAmount <= 100){
-            discount = 5f;
-        } else if(totalAmount > 100){
-            discount = 10f;
+        if(totalAmount > 100){
+            discount = .1f;
+        } else if(totalAmount > 50){
+            discount = .05f;
         } else {
-            discount = 1f;
+            discount = .01f;
         }
 
         float totalAmountIncludingVAT = (totalAmount - (totalAmount * discount)) * 1.22f;
@@ -48,9 +48,11 @@ public class A_IfStatements {
         if(x > y){
 
             System.out.println(x + " > " + y);
-        }
-            System.out.println(y + " > " + x);
+        } else if (y > x) {
+        System.out.println(y + " > " + x);
+        } else {
             System.out.println("I can't choose... I think they are equal...");
+        }
 
     }
 }

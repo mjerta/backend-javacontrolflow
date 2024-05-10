@@ -7,8 +7,11 @@ public class C_ForLoops {
     //
 
     // Gebruik een for-loop om een count-down te maken. 3...2...1
+      for (int i = 3; i > 0; i--) {
 
-      System.out.println();
+      System.out.println(i);
+      }
+
 
     System.out.println("Lift off!");
 
@@ -18,10 +21,14 @@ public class C_ForLoops {
     //
 
     // Bekijk onderstaand voorbeeld:
-    // for(char c = 'a'; c <= 'z'; c++){
-    // }
+     for(char c = 'a'; c <= 'z'; c++){
+         System.out.println(c);
+     }
     // Dit voorbeeld gebruikt een for loop om door alle characters van a t/m z te loopen.
     // Implementeer 2 for-loops om a t/m z en daarna A t/m Z te printen.
+      for(char c = 'A'; c <= 'Z'; c++){
+          System.out.println(c);
+      }
 
 
     //
@@ -34,6 +41,9 @@ public class C_ForLoops {
     int[] numbers = {4, 3, 6, 8, 2, 3, 2, 2, 0, 9};
 
     // Implementeer een for-loop die elk element in de array print.
+      for(int i = 0; i < numbers.length; i++){
+          System.out.println(numbers[i]);
+      }
 
   }
 }
