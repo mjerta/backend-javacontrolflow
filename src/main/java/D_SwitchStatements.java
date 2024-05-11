@@ -1,7 +1,6 @@
 public class D_SwitchStatements {
 
   public static void main(String[] args) {
-
     //
     // Switch Statement 1
     //
@@ -17,10 +16,7 @@ public class D_SwitchStatements {
         break;
       default:
         System.out.println("!=one && !=two");
-        break;
     }
-
-
     //
     // Switch Statement 2
     //
@@ -39,7 +35,10 @@ public class D_SwitchStatements {
       case "Pepsi":
       case "7Up":
       case "Mountain Dew":
-        System.out.println("=PepsiCo");
+        System.out.println("PepsiCo");
+        break;
+      default:
+        System.out.println("onbekend");
     }
 
   }
