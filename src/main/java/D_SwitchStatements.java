@@ -8,7 +8,7 @@ public class D_SwitchStatements {
 
     // Voeg aan onderstaand switch statement de juiste cases toe. Vergeet ook niet op de juiste plekken een `break` toe te voegen.
     int y = 1;
-    switch (y) {
+    switch (y) { //mijn versie
       case 1:
         System.out.println("=one");
         break;
